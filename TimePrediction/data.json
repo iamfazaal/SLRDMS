@@ -1,0 +1,93 @@
+{
+    "Monday": {
+        "Matara": "6:04",
+        "Weligama": "06:17:06:18",
+        "Ahangama": "06:25:06:26",
+        "Galle": "06:44:06:54",
+        "Hikkaduwa": "07:08:07:09",
+        "Ambalangoda": "07:19:07:20",
+        "Kosgoda": "07:30:07:31",
+        "Aluthgama": "07:40:07:41",
+        "Kaluthara South": "07:55:07:57",
+        "Colombo Fort": "08:42:08:44",
+        "Maradana": "8:48"
+    },
+    "Tuesday": {
+        "Matara": "6:04",
+        "Weligama": "06:17:06:18",
+        "Ahangama": "06:25:06:26",
+        "Galle": "06:44:06:54",
+        "Hikkaduwa": "07:08:07:09",
+        "Ambalangoda": "07:19:07:20",
+        "Kosgoda": "07:30:07:31",
+        "Aluthgama": "07:40:07:41",
+        "Kaluthara South": "07:55:07:57",
+        "Colombo Fort": "08:42:08:44",
+        "Maradana": "8:48"
+    },
+    "Wednesday": {
+        "Matara": "6:05",
+        "Weligama": "06:18:06:19",
+        "Ahangama": "06:26:06:27",
+        "Galle": "06:45:06:55",
+        "Hikkaduwa": "07:09:07:10",
+        "Ambalangoda": "07:20:07:21",
+        "Kosgoda": "07:31:07:32",
+        "Aluthgama": "07:41:07:42",
+        "Kaluthara South": "07:56:07:58",
+        "Colombo Fort": "08:43:08:45",
+        "Maradana": "8:49"
+    },
+    "Thursday": {
+        "Matara": "6:05",
+        "Weligama": "06:18:06:19",
+        "Ahangama": "06:26:06:27",
+        "Galle": "06:45:06:55",
+        "Hikkaduwa": "07:09:07:10",
+        "Ambalangoda": "07:20:07:21",
+        "Kosgoda": "07:31:07:32",
+        "Aluthgama": "07:41:07:42",
+        "Kaluthara South": "07:56:07:58",
+        "Colombo Fort": "08:43:08:45",
+        "Maradana": "8:49"
+    },
+    "Friday": {
+        "Matara": "6:05",
+        "Weligama": "06:18:06:19",
+        "Ahangama": "06:26:06:27",
+        "Galle": "06:45:06:55",
+        "Hikkaduwa": "07:09:07:10",
+        "Ambalangoda": "07:20:07:21",
+        "Kosgoda": "07:31:07:32",
+        "Aluthgama": "07:41:07:42",
+        "Kaluthara South": "07:56:07:58",
+        "Colombo Fort": "08:43:08:45",
+        "Maradana": "8:49"
+    },
+    "Saturday": {
+        "Matara": "6:05",
+        "Weligama": "06:18:06:19",
+        "Ahangama": "06:26:06:27",
+        "Galle": "06:45:06:55",
+        "Hikkaduwa": "07:09:07:10",
+        "Ambalangoda": "07:20:07:21",
+        "Kosgoda": "07:31:07:32",
+        "Aluthgama": "07:41:07:42",
+        "Kaluthara South": "07:56:07:58",
+        "Colombo Fort": "08:43:08:45",
+        "Maradana": "8:49"
+    },
+    "Sunday": {
+        "Matara": "6:05",
+        "Weligama": "06:18:06:19",
+        "Ahangama": "06:26:06:27",
+        "Galle": "06:45:06:55",
+        "Hikkaduwa": "07:09:07:10",
+        "Ambalangoda": "07:20:07:21",
+        "Kosgoda": "07:31:07:32",
+        "Aluthgama": "07:41:07:42",
+        "Kaluthara South": "07:56:07:58",
+        "Colombo Fort": "08:43:08:45",
+        "Maradana": "8:49"
+    }
+}
