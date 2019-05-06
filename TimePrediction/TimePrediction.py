@@ -1,6 +1,7 @@
 from sklearn import tree
 # import json
 import codecs, json
+from firebase import firebase
 sourceFile = open("example.json", "rU")
 
 json_data = json.load(sourceFile)
@@ -2383,137 +2384,356 @@ labels = ["6:05","06:18:06:19","06:26:06:27","06:45:06:55","07:09:07:10","07:20:
           "06:29:06:30","06:48:06:58","07:12:07:13","07:23:07:24","07:34:07:35","07:44:07:45","07:59:08:01","08:46:08:48","8:52","6:05",
           "06:18:06:19","06:26:06:27","06:45:06:55","07:09:07:10","07:20:07:21","07:31:07:32","07:41:07:42","07:56:07:58","08:43:08:45","8:49"]
 
+# ML
 clf = tree.DecisionTreeClassifier()
 clf = clf.fit(features, labels)
 
+# Monday results
 mon_matara = clf.predict([[0,0]])
+# coverting nd array to a str
+mon_matara = ''.join(mon_matara)
+
 mon_weligama = clf.predict([[0,1]])
+mon_weligama = ''.join(mon_weligama)
+
 mon_ahangama = clf.predict([[0,2]])
+mon_ahangama = ''.join(mon_ahangama)
+
 mon_galle = clf.predict([[0,3]])
+mon_galle = ''.join(mon_galle)
+
 mon_hikkaduwa = clf.predict([[0,4]])
+mon_hikkaduwa = ''.join(mon_hikkaduwa)
+
 mon_ambalangoda = clf.predict([[0,5]])
+mon_ambalangoda = ''.join(mon_ambalangoda)
+
 mon_kosgoda = clf.predict([[0,6]])
+mon_kosgoda = ''.join(mon_kosgoda)
+
 mon_aluthgama = clf.predict([[0,7]])
+mon_aluthgama = ''.join(mon_aluthgama)
+
 mon_kaluthara_south = clf.predict([[0,8]])
+mon_kaluthara_south = ''.join(mon_kaluthara_south)
+
 mon_colombo_fort = clf.predict([[0,9]])
+mon_colombo_fort = ''.join(mon_colombo_fort)
+
 mon_maradana = clf.predict([[0,10]])
+mon_maradana = ''.join(mon_maradana)
 
+# Tuesday results
 tue_matara = clf.predict([[1,0]])
+tue_matara = ''.join(tue_matara)
+
 tue_weligama = clf.predict([[1,1]])
+tue_weligama = ''.join(tue_weligama)
+
 tue_ahangama = clf.predict([[1,2]])
+tue_ahangama = ''.join(tue_ahangama)
+
 tue_galle = clf.predict([[1,3]])
+tue_galle = ''.join(tue_galle)
+
 tue_hikkaduwa = clf.predict([[1,4]])
+tue_hikkaduwa = ''.join(tue_hikkaduwa)
+
 tue_ambalangoda = clf.predict([[1,5]])
+tue_ambalangoda = ''.join(tue_ambalangoda)
+
 tue_kosgoda = clf.predict([[1,6]])
+tue_kosgoda = ''.join(tue_kosgoda)
+
 tue_aluthgama = clf.predict([[1,7]])
+tue_aluthgama = ''.join(tue_aluthgama)
+
 tue_kaluthara_south = clf.predict([[1,8]])
+tue_kaluthara_south = ''.join(tue_kaluthara_south)
+
 tue_colombo_fort = clf.predict([[1,9]])
+tue_colombo_fort = ''.join(tue_colombo_fort)
+
 tue_maradana = clf.predict([[1,10]])
+tue_maradana = ''.join(tue_maradana)
 
+# Wednesday results
 wed_matara = clf.predict([[2,0]])
+wed_matara = ''.join(wed_matara)
+
 wed_weligama = clf.predict([[2,1]])
+wed_weligama = ''.join(wed_weligama)
+
 wed_ahangama = clf.predict([[2,2]])
+wed_ahangama = ''.join(wed_ahangama)
+
 wed_galle = clf.predict([[2,3]])
+wed_galle = ''.join(wed_galle)
+
 wed_hikkaduwa = clf.predict([[2,4]])
+wed_hikkaduwa = ''.join(wed_hikkaduwa)
+
 wed_ambalangoda = clf.predict([[2,5]])
+wed_ambalangoda = ''.join(wed_ambalangoda)
+
 wed_kosgoda = clf.predict([[2,6]])
+wed_kosgoda = ''.join(wed_kosgoda)
+
 wed_aluthgama = clf.predict([[2,7]])
+wed_aluthgama = ''.join(wed_aluthgama)
+
 wed_kaluthara_south = clf.predict([[2,8]])
+wed_kaluthara_south = ''.join(wed_kaluthara_south)
+
 wed_colombo_fort = clf.predict([[2,9]])
+wed_colombo_fort = ''.join(wed_colombo_fort)
+
 wed_maradana = clf.predict([[2,10]])
+wed_maradana = ''.join(wed_maradana)
 
+# Thursday results
 thu_matara = clf.predict([[3,0]])
+thu_matara = ''.join(thu_matara)
+
 thu_weligama = clf.predict([[3,1]])
+thu_weligama = ''.join(thu_weligama)
+
 thu_ahangama = clf.predict([[3,2]])
+thu_ahangama = ''.join(thu_ahangama)
+
 thu_galle = clf.predict([[3,3]])
+thu_galle = ''.join(thu_galle)
+
 thu_hikkaduwa = clf.predict([[3,4]])
+thu_hikkaduwa = ''.join(thu_hikkaduwa)
+
 thu_ambalangoda = clf.predict([[3,5]])
+thu_ambalangoda = ''.join(thu_ambalangoda)
+
 thu_kosgoda = clf.predict([[3,6]])
+thu_kosgoda = ''.join(thu_kosgoda)
+
 thu_aluthgama = clf.predict([[3,7]])
-thu_Kaluthara_south = clf.predict([[3,8]])
+thu_aluthgama = ''.join(thu_aluthgama)
+
+thu_kaluthara_south = clf.predict([[3,8]])
+thu_kaluthara_south = ''.join(thu_kaluthara_south)
+
 thu_colombo_fort = clf.predict([[3,9]])
+thu_colombo_fort = ''.join(thu_colombo_fort)
+
 thu_maradana = clf.predict([[3,10]])
+thu_maradana = ''.join(thu_maradana)
 
-
+# Friday results
 fri_matara = clf.predict([[4,0]])
+fri_matara = ''.join(fri_matara)
+
 fri_weligama = clf.predict([[4,1]])
+fri_weligama = ''.join(fri_weligama)
+
 fri_ahangama = clf.predict([[4,2]])
+fri_ahangama = ''.join(fri_ahangama)
+
 fri_galle = clf.predict([[4,3]])
+fri_galle = ''.join(fri_galle)
+
 fri_hikkaduwa = clf.predict([[4,4]])
+fri_hikkaduwa = ''.join(fri_hikkaduwa)
+
 fri_ambalangoda = clf.predict([[4,5]])
+fri_ambalangoda = ''.join(fri_ambalangoda)
+
 fri_kosgoda = clf.predict([[4,6]])
+fri_kosgoda = ''.join(fri_kosgoda)
+
 fri_aluthgama = clf.predict([[4,7]])
-fri_Kaluthara_south = clf.predict([[4,8]])
+fri_aluthgama = ''.join(fri_aluthgama)
+
+fri_kaluthara_south = clf.predict([[4,8]])
+fri_kaluthara_south = ''.join(fri_kaluthara_south)
+
 fri_colombo_fort = clf.predict([[4,9]])
+fri_colombo_fort = ''.join(fri_colombo_fort)
+
 fri_maradana = clf.predict([[4,10]])
+fri_maradana = ''.join(fri_maradana)
 
+# saturday results
 sat_matara = clf.predict([[5,0]])
+sat_matara = ''.join(sat_matara)
+
 sat_weligama = clf.predict([[5,1]])
+sat_weligama = ''.join(sat_weligama)
+
 sat_ahangama = clf.predict([[5,2]])
+sat_ahangama = ''.join(sat_ahangama)
+
 sat_galle = clf.predict([[5,3]])
+sat_galle = ''.join(sat_galle)
+
 sat_hikkaduwa = clf.predict([[5,4]])
+sat_hikkaduwa = ''.join(sat_hikkaduwa)
+
 sat_ambalangoda = clf.predict([[5,5]])
+sat_ambalangoda = ''.join(sat_ambalangoda)
+
 sat_kosgoda = clf.predict([[5,6]])
+sat_kosgoda = ''.join(sat_kosgoda)
+
 sat_aluthgama = clf.predict([[5,7]])
-sat_Kaluthara_south = clf.predict([[5,8]])
+sat_aluthgama = ''.join(sat_aluthgama)
+
+sat_kaluthara_south = clf.predict([[5,8]])
+sat_kaluthara_south = ''.join(sat_kaluthara_south)
+
 sat_colombo_fort = clf.predict([[5,9]])
+sat_colombo_fort = ''.join(sat_colombo_fort)
+
 sat_maradana = clf.predict([[5,10]])
+sat_maradana = ''.join(sat_maradana)
 
+# sunday results
 sun_matara = clf.predict([[6,0]])
+sun_matara = ''.join(sun_matara)
+
 sun_weligama = clf.predict([[6,1]])
+sun_weligama = ''.join(sun_weligama)
+
 sun_ahangama = clf.predict([[6,2]])
+sun_ahangama = ''.join(sun_ahangama)
+
 sun_galle = clf.predict([[6,3]])
+sun_galle = ''.join(sun_galle)
+
 sun_hikkaduwa = clf.predict([[6,4]])
+sun_hikkaduwa = ''.join(sun_hikkaduwa)
+
 sun_ambalangoda = clf.predict([[6,5]])
+sun_ambalangoda = ''.join(sun_ambalangoda)
+
 sun_kosgoda = clf.predict([[6,6]])
+sun_kosgoda = ''.join(sun_kosgoda)
+
 sun_aluthgama = clf.predict([[6,7]])
-sun_Kaluthara_south = clf.predict([[6,8]])
+sun_aluthgama = ''.join(sun_aluthgama)
+
+sun_kaluthara_south = clf.predict([[6,8]])
+sun_kaluthara_south = ''.join(sun_kaluthara_south)
+
 sun_colombo_fort = clf.predict([[6,9]])
+sun_colombo_fort = ''.join(sun_colombo_fort)
+
 sun_maradana = clf.predict([[6,10]])
+sun_maradana = ''.join(sun_maradana)
 
-print(sat_maradana)
+#json data
+data = {
+    "Monday": {
+        "Matara": mon_matara,
+        "Weligama": mon_weligama,
+        "Ahangama": mon_ahangama,
+        "Galle": mon_galle,
+        "Hikkaduwa": mon_hikkaduwa,
+        "Ambalangoda": mon_ambalangoda,
+        "Kosgoda": mon_kosgoda,
+        "Aluthgama": mon_aluthgama,
+        "Kaluthara South": mon_kaluthara_south,
+        "Colombo Fort": mon_colombo_fort,
+        "Maradana": mon_maradana
+    },
+    "Tuesday": {
+        "Matara": tue_matara,
+        "Weligama": tue_weligama,
+        "Ahangama": tue_ahangama,
+        "Galle": tue_galle,
+        "Hikkaduwa": tue_hikkaduwa,
+        "Ambalangoda": tue_ambalangoda,
+        "Kosgoda": tue_kosgoda,
+        "Aluthgama": tue_aluthgama,
+        "Kaluthara South": tue_kaluthara_south,
+        "Colombo Fort": tue_colombo_fort,
+        "Maradana": tue_maradana
+    },
+    "Wednesday": {
+        "Matara": wed_matara,
+        "Weligama": wed_weligama,
+        "Ahangama": wed_ahangama,
+        "Galle": wed_galle,
+        "Hikkaduwa": wed_hikkaduwa,
+        "Ambalangoda": wed_ambalangoda,
+        "Kosgoda": wed_kosgoda,
+        "Aluthgama": wed_aluthgama,
+        "Kaluthara South": wed_kaluthara_south,
+        "Colombo Fort": wed_colombo_fort,
+        "Maradana": wed_maradana
+    },
+    "Thursday": {
+        "Matara": thu_matara,
+        "Weligama": thu_weligama,
+        "Ahangama": thu_ahangama,
+        "Galle": thu_galle,
+        "Hikkaduwa": thu_hikkaduwa,
+        "Ambalangoda": thu_ambalangoda,
+        "Kosgoda": thu_kosgoda,
+        "Aluthgama": thu_aluthgama,
+        "Kaluthara South": thu_kaluthara_south,
+        "Colombo Fort": thu_colombo_fort,
+        "Maradana": thu_maradana
+    },
+    "Friday": {
+        "Matara": fri_matara,
+        "Weligama": fri_weligama,
+        "Ahangama": fri_ahangama,
+        "Galle": fri_galle,
+        "Hikkaduwa": fri_hikkaduwa,
+        "Ambalangoda": fri_ambalangoda,
+        "Kosgoda": fri_kosgoda,
+        "Aluthgama": fri_aluthgama,
+        "Kaluthara South": fri_kaluthara_south,
+        "Colombo Fort": fri_colombo_fort,
+        "Maradana": fri_maradana
+    },
+    "Saturday": {
+        "Matara": sat_matara,
+        "Weligama": sat_weligama,
+        "Ahangama": sat_ahangama,
+        "Galle": sat_galle,
+        "Hikkaduwa": sat_hikkaduwa,
+        "Ambalangoda": sat_ambalangoda,
+        "Kosgoda": sat_kosgoda,
+        "Aluthgama": sat_aluthgama,
+        "Kaluthara South": sat_kaluthara_south,
+        "Colombo Fort": sat_colombo_fort,
+        "Maradana": sat_maradana
+    },
+    "Sunday": {
+        "Matara": sun_matara,
+        "Weligama": sun_weligama,
+        "Ahangama": sun_ahangama,
+        "Galle": sun_galle,
+        "Hikkaduwa": sun_hikkaduwa,
+        "Ambalangoda": sun_ambalangoda,
+        "Kosgoda": sun_kosgoda,
+        "Aluthgama": sun_aluthgama,
+        "Kaluthara South": sun_kaluthara_south,
+        "Colombo Fort": sun_colombo_fort,
+        "Maradana": sun_maradana
+    }
+}
 
-data = {}
-# data['people'] = []
-data['Monday']={
-    "Matara": mon_matara,
-    "Weligama": mon_weligama,
-    "Ahangama": mon_ahangama,
-    "Galle": mon_galle,
-    "Hikkaduwa": mon_hikkaduwa,
-    "Ambalangoda": mon_ambalangoda,
-    "Kosgoda": mon_kosgoda,
-    "Aluthgama": mon_aluthgama,
-    "Kaluthara South": mon_kaluthara_south,
-    "Colombo Fort": mon_colombo_fort,
-    "Maradana": mon_maradana
-}
-data['Tuesday']={
-    "Matara": tue_matara,
-    "Weligama": tue_weligama,
-    "Ahangama": tue_ahangama,
-    "Galle": tue_galle,
-    "Hikkaduwa": tue_hikkaduwa,
-    "Ambalangoda": tue_ambalangoda,
-    "Kosgoda": tue_kosgoda,
-    "Aluthgama": tue_aluthgama,
-    "Kaluthara South": tue_kaluthara_south,
-    "Colombo Fort": tue_colombo_fort,
-    "Maradana": tue_maradana
-}
-data['Wednesday']={
-    "Matara": wed_matara,
-    "Weligama": wed_weligama,
-    "Ahangama": wed_ahangama,
-    "Galle": wed_galle,
-    "Hikkaduwa": wed_hikkaduwa,
-    "Ambalangoda": wed_ambalangoda,
-    "Kosgoda": wed_kosgoda,
-    "Aluthgama": wed_aluthgama,
-    "Kaluthara South": wed_kaluthara_south,
-    "Colombo Fort": wed_colombo_fort,
-    "Maradana": wed_maradana
-}
-b = a.tolist()
-with open('data.json', 'w',) as outfile:
-    json.dump(b,codecs.open(data, outfile,encoding='utf-8'))
+#write data to a json file
+with open('data.json', 'w') as outfile:
+    json.dump(data, outfile, indent=4)
+#connecting firebase
+firebase = firebase.FirebaseApplication('https://ruhunukumari-237d4.firebaseio.com/', None)
+# post data to firebase
+result = firebase.post('',data)
+
+print('Data has been uploaded to the firebase')
+print(result)
+
+# get data from firebase
+result = firebase.get('', '')
+print(result)
+
